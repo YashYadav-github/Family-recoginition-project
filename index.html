@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>Face Recoginition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">    <script src="main.js"></script>
+  </head>
+<body>
+    <center>
+        <h2 class="heading">Family Face Recoginition Web App</h3>
+        <h5 class="heading">Model is trained to identify the following family members : </h2>
+        <div class="persons">
+            <hr>    
+            <h4 class="person_name">Myself</h3>
+            <hr>
+            <h4 class="person_name">Brother</h3>
+            <hr>
+            <h4 class="person_name">Aunt</h3>
+            <hr>
+        </div>
+        <div id="webcam">
+
+        </div>
+
+        <div id="captured_image">
+
+        </div>
+        <button class="btn btn-warning" onclick="TakeSnapshot()">Capture Image</button>
+        <br><Br>
+        <button class="btn btn-success" onclick="check()">Identify Image</button>
+        <br><br>
+        <h4 id="falily_member_name">Family Members Name: </h4>
+        <h4 id="accuracy">Accuracy: </h4>
+    </center>
+    <script src="main.js"></script>
+</body>
+  </html> 
